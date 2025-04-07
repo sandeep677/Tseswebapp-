@@ -1,0 +1,97 @@
+.attendancePage {
+  padding: 1rem 0;
+}
+
+.attendancePage h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filterGroup {
+  flex: 1;
+  min-width: 200px;
+}
+
+.tableContainer {
+  overflow-x: auto;
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.attendanceTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendanceTable th,
+.attendanceTable td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.attendanceTable th {
+  background-color: rgba(0, 0, 0, 0.02);
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.present {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.absent {
+  color: var(--danger-color);
+  font-weight: 500;
+}
+
+.unmarked {
+  color: var(--text-light);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions button {
+    width: 100%;
+  }
+}
+
+.saveStatus {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.totalDays {
+  font-weight: 500;
+}
+
+.saveButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

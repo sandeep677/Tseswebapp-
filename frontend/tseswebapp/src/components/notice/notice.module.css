@@ -1,0 +1,45 @@
+.noticePage {
+  padding: 1rem 0;
+}
+
+.noticePage h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.noticeList {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.noticeCard {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.noticeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.noticeHeader h2 {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+
+.noticeDate {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .noticeList {
+    grid-template-columns: 1fr;
+  }
+}
+

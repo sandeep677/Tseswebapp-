@@ -1,0 +1,23 @@
+.noticeForm {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.noticeForm h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .noticeForm {
+    padding: 1rem;
+  }
+}
+
