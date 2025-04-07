@@ -333,7 +333,7 @@ app.post("/updateattendance", async (req, res) => {
   }
 });
 
-app.listen(port,(result,err)=>{
+app.listen(port,(err)=>{
   if(err){
   console.error(err)
   }
