@@ -30,7 +30,9 @@ app.use(express.json());
 app.use(cookieParser(jwtkey));
 
  
-
+app.get("/",(req,res)=>{
+ return res.send("backend working")
+})
 
 app.get("/getnoticedata",async(req,res)=>{
   try{
