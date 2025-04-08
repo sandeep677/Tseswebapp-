@@ -25,7 +25,7 @@ const db= mysql.createPool({
 });
 
 
-app.use(cors({credentials:true,origin:"http://localhost:3000"}));
+app.use(cors({credentials:true,origin:"https://tseswebapp.netlify.com"}));
 app.use(express.json());
 app.use(cookieParser(jwtkey));
 
