@@ -225,8 +225,11 @@ app.post("/addhomework",async(req,res)=>{
   const dueDate=req.body.dueDate;
   const assignedDate=req.body.assignedDate;
   try{
-    const response=db.query("insert into homework(class,subject,description,dueDate,assignedDate) values(?,?,?,?,?)",[year,subject,description,dueDate,assignedDate])
+    const [response]=await db.query("insert into homework(class,subject,description,dueDate,assignedDate) values(?,?,?,?,?)",[year,subject,description,dueDate,assignedDate])
     res.status(200).send("successfully created")
+
+    const rows= await db.query("select * from homework where id = ?",[result.insertId])
+    return res.status(200).json(rows[0])
   }catch(error){res.send(error)}
 })
 
