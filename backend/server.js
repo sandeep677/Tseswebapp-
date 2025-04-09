@@ -124,8 +124,7 @@ user_info.role="teacher"
    maxAge:7*24*60*60*1000,
    path:"/",
    secure:true,
-   sameSite:'None',
-   domain:".netlify.app"
+   sameSite:'None'
   })
  return res.status(200).json(isvalid.data)
   }
